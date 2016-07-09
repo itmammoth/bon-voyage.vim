@@ -1,6 +1,6 @@
 # tablemaker.vim
 
-tablemaker.vim is a vim plugin that sources a specific file on starting vim.
+tablemaker.vim is a simple vim plugin that sets up your workspace on starting vim.
 
 ![Screenshot](https://raw.githubusercontent.com/itmammoth/tablemaker.vim/master/images/tablemaker.gif)
 
