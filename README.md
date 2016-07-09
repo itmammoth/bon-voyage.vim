@@ -7,7 +7,7 @@ tablemaker.vim is a simple vim plugin that sets up your workspace on starting vi
 # Features
 
 * Try to source `.tablemaker.vim` in the current directory
-  * And if it's not found, try to source `.tablemaker.vim` in $HOME directory
+  * And if it's not found, try to source `.tablemaker.vim` in your $HOME directory
 * Never run when vim is running with any arguments or reading stdin
 
 # Installation
