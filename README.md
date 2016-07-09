@@ -2,7 +2,7 @@
 
 tablemaker.vim is a vim plugin that sources a specific file on starting vim.
 
-![Screenshot](https://raw.githubusercontent.com/itmammoth/tablemaker.vim/master/images/tablemaker.png)
+![Screenshot](https://raw.githubusercontent.com/itmammoth/tablemaker.vim/master/images/tablemaker.gif)
 
 # Features
 
