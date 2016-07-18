@@ -1,13 +1,13 @@
-# tablemaker.vim
+# bon-voyage.vim
 
-tablemaker.vim is a simple vim plugin that sets up your workspace on starting vim.
+bon-voyage.vim is a simple vim plugin that sets up your workspace on starting vim.
 
-![Screenshot](https://raw.githubusercontent.com/itmammoth/tablemaker.vim/master/images/tablemaker.gif)
+![Screenshot](https://raw.githubusercontent.com/itmammoth/bon-voyage.vim/master/images/bonvoyage.gif)
 
 # Features
 
-* Try to source `.tablemaker.vim` in the current directory
-  * And if it's not found, try to source `.tablemaker.vim` in your $HOME directory
+* Try to source `.bon-voyage.vim` in the current directory
+  * And if it's not found, try to source `.bon-voyage.vim` in your $HOME directory
 * Never run when vim is running with any arguments or reading stdin
 
 # Installation
@@ -15,20 +15,20 @@ tablemaker.vim is a simple vim plugin that sets up your workspace on starting vi
 ## vim-plug
 Add this to your .vimrc file.
 
-    Plug 'itmammoth/tablemaker.vim'
+    Plug 'itmammoth/bon-voyage.vim'
 
 Then, `:PlugInstall`
 
 ## dein.vim
 Add this to your .vimrc file.
 
-    call dein#add('itmammoth/tablemaker.vim')
+    call dein#add('itmammoth/bon-voyage.vim')
 
 Then, `:call dein#install()`
 
 ## Vundle
 
-    Plugin 'itmammoth/tablemaker.vim'
+    Plugin 'itmammoth/bon-voyage.vim'
 
 
 ... and many other plugin managers.
@@ -37,9 +37,9 @@ Then, `:call dein#install()`
 
 #### For rails project
 
-Create `.tablemaker.vim` in a rails root directory.
+Create `.bon-voyage.vim` in a rails root directory.
 
-    " the_rails_root/.tablemaker.vim
+    " the_rails_root/.bon-voyage.vim
     if has('gui_running')
       set columns=190 lines=70
     endif
@@ -57,9 +57,9 @@ Run vim in the directory without any arguments.
 
 #### For global
 
-Create `.tablebaker.vim` in your `$HOME` directory. (If `.tablemaker.vim` is not found in the current directory, $HOME directory will be the search directory to find `tablemaker.vim`)
+Create `.bon-voyage.vim` in your `$HOME` directory. (If `.bon-voyage.vim` is not found in the current directory, $HOME directory will be the search directory to find `bon-voyage.vim`)
 
-    " ~/.tablemaker.vim
+    " ~/.bon-voyage.vim
     edit $MYVIMRC
 
 Run vim without any arguments.
@@ -69,13 +69,13 @@ Run vim without any arguments.
 
 # Configuration
 
-#### g:tablemaker_filename
+#### g:bonvoyage_filename
 
 Set the filename to be sourced on starting vim.
-`default: ".tablemaker.vim"`
+`default: ".bon-voyage.vim"`
 
     e.x.)
-    let g:tablemaker_filename = '.tm.vim'
+    let g:bonvoyage_filename = '.bv.vim'
 
 # Contribution
 
