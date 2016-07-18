@@ -36,7 +36,7 @@ Then, `:call dein#install()`
 
 # Example
 
-#### For rails project
+### For rails project
 
 Create `.bon-voyage.vim` in a rails root directory.
 
@@ -56,7 +56,7 @@ Run vim in the directory without any arguments.
     $ cd the_rails_root
     $ gvim
 
-#### For global
+### For global
 
 Create `.bon-voyage.vim` in your `$HOME` directory. (If `.bon-voyage.vim` is not found in the current directory, $HOME directory will be the search directory to find `bon-voyage.vim`)
 
@@ -68,7 +68,7 @@ Run vim without any arguments.
     $ cd any_directory
     $ vim
 
-#### Using cargo
+### Using cargo
 
 You can split source into multiple files as cargos for reusing in any directories.
 Create cargo files in `~/.bon-voyage/cargos`
