@@ -6,8 +6,9 @@ bon-voyage.vim is a simple vim plugin that sets up your workspace on starting vi
 
 # Features
 
-* Try to source `.bon-voyage.vim` in the current directory
+* Auto sourcing `.bon-voyage.vim` in the current directory on starting up vim
   * And if it's not found, try to source `.bon-voyage.vim` in your $HOME directory
+* Loading source files from multiple `cargo` files.
 * Never run when vim is running with any arguments or reading stdin
 
 # Installation
@@ -65,17 +66,52 @@ Create `.bon-voyage.vim` in your `$HOME` directory. (If `.bon-voyage.vim` is not
 Run vim without any arguments.
 
     $ cd any_directory
+    $ vim
+
+#### Using cargo
+
+You can split source into multiple files as cargos for reusing in any directories.
+Create cargo files in `~/.bon-voyage/cargos`
+
+    " ~/.bon-voyage/cargos/ide.vim
+    if has('gui_running')
+      set columns=190 lines=70
+    endif
+    NERDTree
+
+
+    " ~/.bon-voyage/cargos/javascript.vim
+    set ts=4 sw=4 sts=4
+
+Create `.bon-voyage.vim` in a directory, then load the cargos with `BonVoyageLoad` command.
+
+    " the_javascript_project/.bon-voyage.vim
+    BonVoyageLoad 'ide'
+    BonVoyageLoad 'javascript'
+
+Run vim in the directory without any arguments.
+
+    $ cd the_javascript_project
     $ gvim
 
 # Configuration
 
 #### g:bonvoyage_filename
 
-Set the filename to be sourced on starting vim.
+Set the filename to be sourced on starting vim.  
 `default: ".bon-voyage.vim"`
 
     e.x.)
     let g:bonvoyage_filename = '.bv.vim'
+
+#### g:bonvoyage_cargo_dir
+
+Set cargos directory.  
+`default: "~/.bon-voyage/cargos"`
+
+    e.x.)
+    let g:bonvoyage_cargo_dir = '~/.dotfiles/vim/bon-voyage/cargos'
+
 
 # Contribution
 
